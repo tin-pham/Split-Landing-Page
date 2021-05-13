@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+
+.side {
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  color: white;
+  position: relative;
+  z-index: 0;
+  transition: all 2000ms ease-in-out;
+}
+
+.side#playstation {
+  background: url(../images/ps.jpg) no-repeat center center/cover;
+}
+
+.side#xbox {
+  background: url(../images/xbox.png) no-repeat center center/cover;
+}
+
+.side:hover {
+  flex: 4;
+  transition: all 2000ms ease-in-out;
+}
+
+.side h1 {
+  font-size: 5rem;
+  white-space: nowrap;
+}
+
+.side .button {
+  border: 5px solid white;
+  outline: none;
+  background: transparent;
+  padding: 1.5em 5em;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.side .button--blue:hover {
+  background: #00509d;
+  border-color: #00509d;
+}
+
+.side .button--green:hover {
+  background: #008000;
+  border-color: #008000;
+}
+
+.side .layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.side .layer--blue {
+  background: #00509d;
+}
+
+.side .layer--black {
+  background: black;
+}
+/*# sourceMappingURL=styles.css.map */
